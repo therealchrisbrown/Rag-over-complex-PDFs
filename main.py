@@ -8,7 +8,7 @@ from langchain.chains import ConversationalRetrievalChain
 from langchain_openai import ChatOpenAI
 from langchain_community.document_loaders import UnstructuredFileLoader
 from langchain.document_loaders.image import UnstructuredImageLoader
-from langchain.document_loaders import ImageCaptionLoader
+from langchain_community.document_loaders import ImageCaptionLoader
 from langchain.docstore.document import Document
 import os
 import openai
