@@ -2,16 +2,17 @@
 
 import streamlit as st
 from langchain.embeddings.openai import OpenAIEmbeddings
-from langchain.vectorstores import chroma
+from langchain_community.vectorstores import Chroma
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.chains import ConversationalRetrievalChain
-from langchain.chat_models import ChatOpenAI
-from langchain.document_loaders import UnstructeredFileLoader
+from langchain_openai import ChatOpenAI
+from langchain_community.document_loaders import UnstructuredFileLoader
 from langchain.document_loaders.image import UnstructuredImageLoader
 from langchain.document_loaders import ImageCaptionLoader
 from langchain.docstore.document import Document
 import os
 import openai
+import pytube
 
 # env
 from dotenv import load_dotenv
